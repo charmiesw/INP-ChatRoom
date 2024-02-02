@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <Label layoutX="62.0" layoutY="46.0" prefHeight="40.0" prefWidth="1000.0" style="-fx-background-color: #9a9090;" text=" LIVE CHAT" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="762.0" fitWidth="718.0" layoutX="-50.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/login.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle fill="#2148ff00" height="60.0" layoutX="585.0" layoutY="347.0" stroke="#9a9090bf" strokeType="INSIDE" width="401.0" />
+      <TextField fx:id="txtUsername" layoutX="609.0" layoutY="347.0" onAction="#txtUsernameOnAction" prefHeight="60.0" prefWidth="352.0" promptText="Username" style="-fx-background-color: trans;">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <opaqueInsets>
+            <Insets left="5.0" right="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="717.0" layoutY="424.0" onAction="#btnLoginOnAction" prefHeight="60.0" prefWidth="137.0" style="-fx-border-color: #9a9090;" text="LOGIN" textFill="#111110">
+         <font>
+            <Font name="DejaVu Sans Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
